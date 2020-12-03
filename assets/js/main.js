@@ -1,5 +1,4 @@
 $(() => {
-	$('.carousel').carousel(); 
 	// Add smooth scrolling to all links
 	$("a").on('click', function (event) {
 
@@ -22,4 +21,7 @@ $(() => {
 			});
 		} // End if
 	});
+
+	// activate wow.js
+	new WOW().init();
 });
