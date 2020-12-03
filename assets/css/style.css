@@ -1,0 +1,223 @@
+/* Variables */
+:root {
+	--danger: #bb1d1a;
+	--dark: #25282b;
+	--blue: #5b6987;
+	--black: #111111;
+	--background: #fafafa;
+}
+
+/* fonts */
+@font-face {
+	font-family: "OpenSans Light";
+	src: url("../fonts/OpenSans/OpenSans-Light.ttf");
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: "OpenSans Regular";
+	src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: "OpenSans SemiBold";
+	src: url("../fonts/OpenSans/OpenSans-SemiBold.ttf");
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: "OpenSans Bold";
+	src: url("../fonts/OpenSans/OpenSans-Bold.ttf");
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+/* Commun Style */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--dark);
+	letter-spacing: normal;
+	font-family: "OpenSans Bold";
+}
+
+h1 {
+	font-size: 42px;
+	line-height: 1.24;
+}
+
+h2 {
+	font-size: 32px;
+	line-height: 1.25;
+}
+
+h3 {
+	font-size: 22px;
+	line-height: 1.45;
+}
+
+h4 {
+	font-size: 18px;
+	line-height: 1.44;
+}
+
+h4.semibold {
+	font-family: "OpenSans SemiBold";
+	font-size: 18px;
+	line-height: 1.44;
+}
+
+p {
+	font-family: "OpenSans Regular";
+	font-size: 22px;
+	line-height: 1.45;
+	color: var(--blue);
+}
+
+body>section header h2 {
+	margin-bottom: 24px;
+}
+
+body>section header p {
+	margin-bottom: 56px;
+}
+
+.nav-link {
+	font-family: "OpenSans Bold";
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: var(--dark) !important;
+}
+
+.nav-link:hover {
+	color: var(--danger) !important;
+}
+
+
+.link.small {
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: -0.28px;
+}
+
+
+/* Navbar Section */
+
+/* Hero Section */
+.hero {
+	margin-top: 72px;
+}
+
+.hero .hero-body h1 {
+	margin-bottom: 24px;
+}
+
+.hero .hero-body p {
+	margin-bottom: 32px;
+}
+
+.hero .hero-body .hero-download a:last-child {
+	margin-left: 8px;
+}
+
+/* Services Section */
+.services {
+	padding-top: 96px;
+	padding-bottom: 96px;
+	background-color: var(--background);
+}
+
+.services .service-card {
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.16);
+	transition: transform 600ms ease;
+	background-color: white;
+	display: block;
+	cursor: pointer;
+}
+.services .service-card:hover{
+	transition: transform 600ms ease;
+	text-decoration: none;
+	transform: translateY(-10px);
+}
+.services .service-card:active{
+	transition: transform 400ms ease;
+	transform: translateY(-7px);
+}
+.services .service-card img {
+	max-width: 100%;
+}
+
+.services .service-card .service-card-title {
+	height: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+/* About Us Section */
+.about-us {
+	padding-top: 96px;
+	padding-bottom: 96px;
+}
+.about-us img{
+	max-width: 100%;
+}
+
+/* Slider Section */
+.slider {
+	padding-top: 96px;
+	padding-bottom: 96px;
+	background-color: var(--background);
+
+}
+
+/* How it works section */
+.how-it-works {
+	padding-top: 96px;
+	padding-bottom: 96px;
+}
+
+/* Request a Quote section */
+.request {
+	padding-top: 96px;
+	padding-bottom: 96px;
+	background-color: var(--background);
+}
+
+/* Download section */
+
+.download {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: var(--danger);
+}
+
+.download h2 {
+	color: white;
+}
+
+.download h2 span {
+	font-family: "OpenSans Light";
+	display: block;
+}
+
+/* Footer section */
+.footer {
+	padding-top: 64px;
+	padding-bottom: 64px;
+	background-color: var(--black);
+}
