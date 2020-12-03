@@ -80,17 +80,29 @@ h4.semibold {
 
 p {
 	font-family: "OpenSans Regular";
+	font-size: 16px;
+	color: var(--blue);
+	line-height: 1.45;
+}
+
+p.reg {
+	font-family: "OpenSans Regular";
+	font-size: 18px;
+}
+
+p.large {
+	font-family: "OpenSans Regular";
 	font-size: 22px;
 	line-height: 1.45;
 	color: var(--blue);
 }
 
-body>section header h2 {
-	margin-bottom: 24px;
-}
-
 body>section header p {
+	margin-top: 24px;
 	margin-bottom: 56px;
+	font-size: 22px;
+	font-family: "OpenSans Regular";
+	line-height: 1.45;
 }
 
 .nav-link {
@@ -114,6 +126,10 @@ body>section header p {
 
 
 /* Navbar Section */
+.navbar .nav-link {
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
 
 /* Hero Section */
 .hero {
@@ -128,8 +144,8 @@ body>section header p {
 	margin-bottom: 32px;
 }
 
-.hero .hero-body .hero-download a:last-child {
-	margin-left: 8px;
+.hero .hero-body .download-app a:first-child {
+	margin-right: 8px;
 }
 
 /* Services Section */
@@ -146,17 +162,20 @@ body>section header p {
 	display: block;
 	cursor: pointer;
 }
-.services .service-card:hover{
+
+.services .service-card:hover {
 	transition: transform 600ms ease;
 	text-decoration: none;
 	transform: translateY(-10px);
 }
-.services .service-card:active{
+
+.services .service-card:active {
 	transition: transform 400ms ease;
 	transform: translateY(-7px);
 }
+
 .services .service-card img {
-	max-width: 100%;
+	width: 100%;
 }
 
 .services .service-card .service-card-title {
@@ -173,8 +192,14 @@ body>section header p {
 	padding-top: 96px;
 	padding-bottom: 96px;
 }
-.about-us img{
-	max-width: 100%;
+
+.about-us .about-card img {
+	width: 100%;
+}
+
+.about-us .about-card .about-card-title {
+	margin-bottom: 16px;
+	margin-top: 24px;
 }
 
 /* Slider Section */
@@ -182,7 +207,34 @@ body>section header p {
 	padding-top: 96px;
 	padding-bottom: 96px;
 	background-color: var(--background);
+}
 
+.slider .carousel-item>div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.slider .carousel-body h2 {
+	margin-bottom: 24px;
+}
+
+.slider .carousel-indicators {
+	left: 0;
+	right: auto;
+	margin: 0;
+	bottom: -27px;
+}
+
+.slider .carousel-indicators li {
+	width: 16px;
+	height: 16px;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+}
+
+.slider .carousel-indicators li.active {
+	background-color: var(--danger);
 }
 
 /* How it works section */
@@ -191,11 +243,84 @@ body>section header p {
 	padding-bottom: 96px;
 }
 
+
+.how-it-works .how-card {
+	width: 316px;
+}
+
+.how-it-works .how-card img {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.how-it-works .how-card.how-card-2 {
+	margin: 0 auto;
+}
+
+.how-it-works .how-card.how-card-3 {
+	margin-left: auto;
+}
+
+.how-it-works .how-card .how-card-body {
+	display: flex;
+	align-items: flex-start;
+	position: relative;
+}
+
+.how-it-works .how-card .how-card-body:not(.last-card)::after {
+	content: url(../img/icons/right-arrow.svg);
+	position: absolute;
+	right: -40px;
+	top: 35px;
+}
+
+.how-it-works .how-card .how-card-body h4 {
+	padding-top: 8px;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+}
+
+.how-it-works .how-card .step {
+	background-color: var(--danger);
+	min-width: 48px;
+	min-height: 48px;
+	border-radius: 50%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 16px;
+}
+
 /* Request a Quote section */
 .request {
 	padding-top: 96px;
 	padding-bottom: 96px;
 	background-color: var(--background);
+}
+
+.request .btn-danger {
+	background-color: var(--danger);
+	padding: 24px;
+	font-family: "OpenSans Bold";
+	font-size: 22px;
+	border-radius: 8px;
+	transition: transform 600ms ease;
+
+}
+
+.request .btn-danger svg:first-child {
+	margin-right: 10px;
+}
+
+.request .btn-danger svg:last-child {
+	margin-left: 10px;
+}
+
+.request .btn-danger:hover {
+	transition: transform 600ms ease;
+	text-decoration: none;
+	transform: translateY(-3px);
 }
 
 /* Download section */
@@ -220,4 +345,179 @@ body>section header p {
 	padding-top: 64px;
 	padding-bottom: 64px;
 	background-color: var(--black);
+}
+
+.footer .navs {
+	display: flex;
+	justify-content: center;
+}
+
+.footer .navs .nav-link {
+	color: #ffffff !important;
+}
+
+.footer .social-media {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.footer .social-media a {
+	padding: 5px 16px;
+}
+
+.footer .address {
+	color: rgba(255, 255, 255, 0.6);
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.footer .email {
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 47px;
+}
+
+.footer .prefooter {
+	padding-top: 40px;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer .prefooter p {
+	text-align: center;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* Media Query */
+@media (max-width: 1200px) {
+	.how-it-works .how-card .how-card-body:not(.last-card)::after{
+		opacity: 0;
+	}
+}
+@media (max-width: 992px) {
+	.hero img {
+		max-width: 100%;
+	}
+	.slider .carousel-item>div{
+		flex-direction: column-reverse;
+	}
+	.slider .carousel-item>div h2{
+		margin-top: 24px;
+	}
+	.hero .download-app{
+		margin-bottom: 24px;
+	}
+
+	.service-card , .about-card{
+		margin-bottom: 34px;
+	}
+
+
+}
+
+@media (max-width: 768px) {
+	.navbar .navbar-brand img {
+		height: 38px
+	}
+	.download-app {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.last-card{
+		margin-bottom: 0 !important;
+	}
+	.services,
+	.about-us,
+	.how-it-works,
+	.request {
+		padding-top: 56px;
+		padding-bottom: 56px;
+	}
+
+	.how-it-works .how-card {
+		width: auto;
+		margin-bottom: 100px;
+	}
+	.how-it-works .how-card .how-card-body{
+		flex-direction: column;
+		align-items: center;
+	}
+	.how-it-works .how-card .how-card-body:not(.last-card)::after {
+		top: auto;
+		left: 50%;
+		right: auto;
+		bottom: -60px;
+		transform: translateX(-50%) rotate(90deg);
+		transform-origin: center;
+		opacity: 1;
+	}
+
+	.how-it-works .how-card.how-card-2 {
+		margin-bottom: 100px;
+	}
+
+	.request .btn-danger{
+		padding: 18px;
+	}
+	.request .btn-danger svg:first-child {
+		margin-right: 0px;
+	}
+
+	.request .btn-danger svg:last-child {
+		margin-left: 0px;
+	}
+	.download .download-app{
+		margin-top: 24px;
+	}
+	.carousel-item img, .services .service-card img, .services .service-card img{
+		height: 220px;
+		width: 100%;
+		object-fit: cover;
+	}
+	.footer .navs{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (max-width: 576px) {
+	h1 {
+		font-size: 32px;
+	}
+
+	h2 {
+		font-size: 22px;
+	}
+
+	h3 {
+		font-size: 16px;
+	}
+
+	h4 {
+		font-size: 14px;
+	}
+
+	h4.semibold {
+		font-size: 16px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+	p.reg {
+		font-size: 16px;
+	}
+
+	p.large {
+		font-size: 18px;
+	}
+
+	.download-app a:first-child {
+		margin-bottom: 8px;
+		margin-right: 0 !important;
+	}
 }

@@ -28,7 +28,7 @@
 	<nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="#">
-				<img src="./assets/img/logo/logo.svg" height="48" width="186.37" alt="The Manual Assembly">
+				<img src="./assets/img/logo/logo.svg" height="48" alt="The Manual Assembly">
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
 				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,9 +63,10 @@
 			<div class="col-lg-6 col-md-12">
 				<div class="hero-body">
 					<h1>The easy, reliable way to take care of your home.</h1>
-					<p>Have a new desk or bookcase to put together? Taskers can assemble any of your furniture - quickly
+					<p class="large">Have a new desk or bookcase to put together? Taskers can assemble any of your
+						furniture - quickly
 						and efficiently.</p>
-					<div class="hero-download">
+					<div class="download-app">
 						<a href="#">
 							<img src="./assets/img/downloads/app-store-dark.svg" alt="">
 						</a>
@@ -111,7 +112,7 @@
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-12">
-					<a href="#" class="service-card">
+					<a href="#" class="service-card last-card">
 						<img src="./assets/img/services/image 7.jpg" alt="Painting">
 						<h4 class="semibold service-card-title">Painting</h4>
 					</a>
@@ -129,25 +130,25 @@
 		</header>
 		<div class="row">
 			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div>
+				<div class="about-card">
 					<img src="./assets/img/experience/image 2.jpg" alt="Trustworthy & Professional">
-					<h3 class="semibold">Trustworthy & Professional</h3>
+					<h3 class="about-card-title semibold">Trustworthy & Professional</h3>
 					<p class="reg">Our handymen are operated franchisees hire have an average of 10 years' experience in
 						the trades and fully insured by our own workers' compensation insurance.</p>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div>
+				<div class="about-card">
 					<img src="./assets/img/experience/image 2-1.jpg" alt="Locally-owned">
-					<h3 class="semibold">Locally-owned</h3>
+					<h3 class="about-card-title semibold">Locally-owned</h3>
 					<p class="reg">Whether we're improving your home or providing local jobs, The Manual Assembly is are
 						a proud member of your local community.</p>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div>
+				<div class="about-card last-card">
 					<img src="./assets/img/experience/image 2-2.jpg" alt="Satisfied Guaranteed">
-					<h3 class="semibold">Satisfied Guaranteed</h3>
+					<h3 class="about-card-title semibold">Satisfied Guaranteed</h3>
 					<p class="reg">At The Manual Assembly we believe in exceptional service and quality workmanship
 						which is why we back every job we do with our worry-free guarantee.</p>
 				</div>
@@ -159,7 +160,45 @@
 	<!-- [BEGIN] Slider Section-->
 	<section class="slider">
 		<div class="container">
-			Slider
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div>
+							<div class="carousel-body">
+								<h2>“Nothing to complain. A good guy with good service. Hope to have him sent the next
+									service order.”</h2>
+								<p class="large">~ Bruce Jones</p>
+							</div>
+							<img src="./assets/img/slider/image 3.jpg" alt="1 slide">
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div>
+							<div class="carousel-body">
+								<h2>“Nothing to complain. A good guy with good service. Hope to have him sent the next
+									service order.”</h2>
+								<p class="large">~ Bruce Jones</p>
+							</div>
+							<img src="./assets/img/slider/image 3.jpg" alt="1 slide">
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div>
+							<div class="carousel-body">
+								<h2>“Nothing to complain. A good guy with good service. Hope to have him sent the next
+									service order.”</h2>
+								<p class="large">~ Bruce Jones</p>
+							</div>
+							<img src="./assets/img/slider/image 3.jpg" alt="1 slide">
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<!-- [END] Slider Section -->
@@ -172,10 +211,10 @@
 		</header>
 		<div class="row">
 			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div>
+				<div class="how-card">
 					<img src="./assets/img/how-it-works/image 8.jpg" alt="SCHEDULING">
-					<div class="d-flex">
-						<div>1</div>
+					<div class="how-card-body">
+						<div class="step">1</div>
 						<div>
 							<h4>SCHEDULING</h4>
 							<p>Scheduling with Mr. Handyman is easy. Just one simple phone call hires a seasoned
@@ -185,10 +224,10 @@
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div>
+				<div class="how-card how-card-2">
 					<img src="./assets/img/how-it-works/Frame 8.jpg" alt="THE ARRIVAL">
-					<div class="d-flex">
-						<div>2</div>
+					<div class="how-card-body">
+						<div class="step">2</div>
 						<div>
 							<h4>THE ARRIVAL</h4>
 							<p>Mr. Handyman arrives at the scheduled appointment time in a clearly marked van with a
@@ -198,10 +237,10 @@
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div>
+				<div class="how-card how-card-3 last-card">
 					<img src="./assets/img/how-it-works/Frame 8-1.jpg" alt="THE WORK">
-					<div class="d-flex">
-						<div>3</div>
+					<div class="how-card-body last-card">
+						<div class="step">3</div>
 						<div>
 							<h4>THE WORK</h4>
 							<p>We’re happy to work with whatever materials you supply – paint that you want to be used,
@@ -246,12 +285,14 @@
 					<h2>The easy, reliable way <span>to take care of your home.</span></h2>
 				</div>
 				<div class="col-md-6 col-sm-12 text-right">
-					<a href="#">
-						<img src="./assets/img/downloads/app-store-light.svg" alt="">
-					</a>
-					<a href="#">
-						<img src="./assets/img/downloads/google-play-light.svg" alt="">
-					</a>
+					<div class="download-app">
+						<a href="#">
+							<img src="./assets/img/downloads/app-store-light.svg" alt="">
+						</a>
+						<a href="#">
+							<img src="./assets/img/downloads/google-play-light.svg" alt="">
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -261,37 +302,20 @@
 	<!-- [BEGIN] Footer section -->
 	<footer class="footer">
 		<div class="container">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="#">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Services</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">About us</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">How it work</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Download</a>
-				</li>
-			</ul>
+			<div class="navs">
+				<a class="nav-link" href="#">Home</a>
+				<a class="nav-link" href="#">Services</a>
+				<a class="nav-link" href="#">About us</a>
+				<a class="nav-link" href="#">How it work</a>
+				<a class="nav-link" href="#">Download</a>
+			</div>
 			<div class="social-media">
 				<a href="#">
 					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<rect width="32" height="32" rx="16" fill="white" fill-opacity="0.64" />
-						<g clip-path="url(#clip0)">
-							<path
-								d="M18.6647 10.6567H20.1254V8.11267C19.8734 8.078 19.0067 8 17.9974 8C15.8914 8 14.4487 9.32467 14.4487 11.7593V14H12.1247V16.844H14.4487V24H17.298V16.8447H19.528L19.882 14.0007H17.2974V12.0413C17.298 11.2193 17.5194 10.6567 18.6647 10.6567Z"
-								fill="#111111" />
-						</g>
-						<defs>
-							<clipPath id="clip0">
-								<rect width="16" height="16" fill="white" transform="translate(8 8)" />
-							</clipPath>
-						</defs>
+						<path
+							d="M18.6647 10.6567H20.1254V8.11267C19.8734 8.078 19.0067 8 17.9974 8C15.8914 8 14.4487 9.32467 14.4487 11.7593V14H12.1247V16.844H14.4487V24H17.298V16.8447H19.528L19.882 14.0007H17.2974V12.0413C17.298 11.2193 17.5194 10.6567 18.6647 10.6567Z"
+							fill="#111111" />
 					</svg>
 				</a>
 				<a href="#">
@@ -332,8 +356,8 @@
 					</svg>
 				</a>
 			</div>
-			<p>1776 Peachtree Street NW, Suite 440S, Atlanta, GA 30309 <br> (888) 8765-432</p>
-			<p>hello@themanualassembly.com</p>
+			<p class="address">1776 Peachtree Street NW, Suite 440S, Atlanta, GA 30309 <br> (888) 8765-432</p>
+			<p class="email">hello@themanualassembly.com</p>
 			<div class="prefooter">
 				<p>© 2020 The Manual Assembly</p>
 			</div>
